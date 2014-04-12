@@ -1,0 +1,21 @@
+name: BlockAPI
+main: org.block.api.BlockAPI
+author: _Justyce_
+version: 0.6
+description: Allow other plugin developers to easily add custom effects to block
+commands:
+  blocklist:
+    description: Show you the whole list of cutsom blocks
+    usage: /<command>  Show you the whole list of cutsom blocks
+    permission: cblock.list
+    permission-message: You're not allowed to use that command.
+  getblock:
+    description: Get a custom block from its name or its index in the list
+    usage: /<command> <name|index> [amount]  Get a custom block from its name or its index in the list
+    permission: cblock.get
+    permission-message: You're not allowed to use that command.
+permissions:
+  cblock.list:
+    description: allow you to see the list of custom blocks
+  cblock.get:
+    description: allow you to get custom blocks
